@@ -1,0 +1,234 @@
+:root{
+    --Strong-cyan: hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: var(--Light-grayish-cyan);
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+input{
+    font-size: 24px;
+    color: var(--Dark-grayish-cyan);
+}
+
+button{
+    width: 30%;
+    border: none;
+    color: var(--White);
+    font-weight: 700;
+    font-size: 1.3rem;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(.9);
+}
+
+button:hover{
+    background-color: var(--Strong-cyan);
+}
+
+.custom{
+    background-color: hsl(189, 41%, 97%);
+    color: var(--Grayish-cyan);
+    width: 30%;
+    border: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: right;
+}
+ 
+
+.logo{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.container{
+    height: 100vh;
+}
+
+.card{
+    min-height: 500px;
+    width: 900px;
+    background-color: var(--White);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -450px;
+    display: flex;
+}
+
+.card-bill{
+    width: 50%;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.input{
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    text-align: right;
+    width: 80%;
+    font-weight: 700;
+    color: var(--Grayish-cyan);
+    
+}
+
+#input-bill{
+    background-image: url(images/icon-dollar.svg);
+    background-size: 13px 13px;
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    background-position-y: center;
+}
+
+#input-people{
+    background-image: url(images/icon-person.svg);
+    background-size: 13px 13px;
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    background-position-y: center;
+}
+
+.card-tip{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.card-tip p{
+    margin-bottom: 30px;
+}
+.card-prices{
+    background-color: var(--Very-dark-cyan);
+    width: 45%;
+    height: 430px;
+    border-radius: 20px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.card-prices p{
+    margin-left: 40px;
+}
+
+.prices-tip{
+    margin: 30px 0;
+}
+
+
+#reset{
+    background-color: var(--Strong-cyan);
+    color: #00494d;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 180px;
+}
+
+#reset:hover{
+    background-color: var(--Light-grayish-cyan);
+}
+
+.selectedTip{
+    background-color: var(--Strong-cyan);
+}
+
+.value{
+    position: absolute;
+    right: 45px;
+    color: var(--Strong-cyan);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.value1{
+    top: 40px;
+}
+.value2{
+    top: 130px;
+}
+
+.peoples{
+    display: inline;
+    color: hsl(184, 14%, 56%);;
+}
+.error-msg{
+    color: #F24A72;
+    padding-left: 4rem;
+    opacity: 0;
+}
+.show-error-msg{
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+.warning{
+    outline: 1px solid #F24A72;
+    transition: 1s ease-in-out;
+}
+
+@media (max-width: 768px){
+
+    .logo{
+        margin-top: 15px;
+    }
+
+    .card{
+        flex-direction: column;
+        width: auto;
+        margin-left: -49%;
+    }
+    .card-bill{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card-prices{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 370px;
+    }
+    .input{
+        width: 100%;
+    }
+    #reset{
+        margin-top: 120px;
+    }
+    .custom{
+        font-size: 0.6rem;
+    }
+    .show-error-msg{
+        display: block;
+        padding-left: 0rem;
+    }
+    
+} 

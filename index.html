@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <main class="container">
+    <div class="logo">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div class="card">
+      <div class="card-bill">
+        <p style="color: hsl(184, 14%, 56%);">Bill</p>
+        <input type="text" class="input" id="input-bill" placeholder="0">
+        <div class="card-tip">
+          <p style="color: hsl(184, 14%, 56%);">Select Tip %</p>
+          <button id="btns-tip">5%</button>
+          <button id="btns-tip">10%</button>
+          <button id="btns-tip">15%</button>
+          <button id="btns-tip">25%</button>
+          <button id="btns-tip">50%</button>
+          <input id="" class="custom" placeholder="CUSTOM"></input>
+        </div>
+        <div class="card-numberPeoples">
+          <p class="peoples">Number of People</p>
+          <span class="error-msg" id="error">can't be zero</span>
+          <input class="input" id="input-people" type="text" placeholder="0">
+        </div>
+      </div> 
+      <div class="card-prices">
+        <article class="prices-tip">
+          <p style="color: white;">Tip Amount</p>
+          <p style="color: hsl(184, 14%, 56%);">/ person</p>
+        </article>
+        <article class="value value1">0.0</article>
+        <article class="prices-total">
+          <p style="color: white;">Total</p>
+          <p style="color: hsl(184, 14%, 56%);">/ person</p>
+        </article>
+        <article class="value value2">0.0</article>
+        <button id="reset">RESET</button>
+      </div> 
+    </div>
+  </main>
+
+  
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
